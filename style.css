@@ -1,0 +1,273 @@
+body{
+    overflow-x: hidden;
+}
+/* Navbar-Section */
+nav img{
+    width:300px;
+    height: 99px;
+}
+
+.navbar-nav{
+    padding-left: 25rem;
+}
+
+.nav-item a {
+    font-family: "Segoe UI";
+    font-size: 25px;
+    color:#519259;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav-item a:hover{
+    border-bottom: 3px solid #064635;
+    margin-bottom: -2px;
+}
+
+
+/* Header-Section */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-caption-left {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: #000000;
+    text-align: left;
+    width: 75%;
+    max-width: 60rem;
+}
+
+.carousel-caption-left h2{
+    font-size: 6rem;
+
+}
+
+.carousel-caption-left p{
+    font-size: 2rem;
+    color: #121412;
+}
+
+.btn{
+    padding:1rem 2rem;
+    font-size: 2rem;
+}
+
+/* Intro-Section */
+#intro-section{
+margin-top: 4rem;
+}
+
+#intro-section h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Poppins";
+    font-weight: bold;
+}
+
+ .grid{
+    margin-top: 2rem;
+    background-image: url(Images/Green-svg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+
+ .grid-wrapper {
+    display: grid;
+    grid-template-columns: 304px 326px; 
+    grid-template-rows: 228px 228px; 
+    gap: 1.5rem;
+    margin-left:4rem;
+    margin-top: 4rem;
+}
+
+.item1, .item2, .item3 {
+    margin-top:1rem;
+}
+
+.item2 img{
+    width: 290px;
+    height: 439px;
+}
+
+.grid-image {
+    display: block; 
+    width: 100%; 
+    height: auto;
+}
+
+.container{
+    gap: 4rem;
+}
+
+.description p{
+    font-size: 2rem;
+}
+
+.footer-container{
+    /* padding: 30px; */
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.footer-logo{
+    background-color: #FFFFFF;
+    padding: 3rem;
+}
+
+.useful-links{
+    width: 100%;
+    background-color: #F4EEA9;
+    display: flex;
+    gap: 10rem;
+    padding: 4em;
+}
+
+.over-line{
+    border-bottom: 3px solid #519259;
+    width: 9.5rem;
+}
+
+.link-lists{
+    margin-top: 2rem;
+}
+
+.link-lists ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.link-lists ul li{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.link-lists{
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.link-lists h2{
+    margin-bottom: 10px;
+    color: black;
+}
+
+.copy-right p{
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+}
+ 
+
+@media (max-width:992px) {
+    .navbar-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+
+    .carousel-caption-left {
+        position: absolute;
+        top: 20%;
+        left: 17%;
+        color: #000000;
+        text-align: left;
+        width: 75%;
+        max-width: 60rem;
+    }
+
+    .carousel-caption-left h2{
+        font-size: 3rem;
+    }
+
+    .btn{
+        padding:0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    .container{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:695px) {
+    .carousel-caption-left {
+        left: 22%;
+    }
+
+    .carousel-caption-left h2{
+        font-size: 2.5rem;
+    }
+
+    .carousel-caption-left p{
+        font-size: 1.02rem;
+        color: #121412;
+    }
+
+    .btn{
+        padding:0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .grid{
+        background-size: 600px 500px;
+    }
+
+    .grid-wrapper{
+        margin-left: 1rem;
+    }
+
+    .item2 img {
+        width: 280px;
+        height: 456px;
+    }
+
+    .description p {
+        font-size: 1.5rem;
+    }
+
+    .useful-links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        align-items: baseline;
+    }
+
+    .link-lists{
+        margin-left: 12rem;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:605px) {
+    .grid-wrapper{
+        gap:0;
+        grid-template-columns: 275px 326px;
+        margin-left: 1.2rem;
+    }
+    .grid-image {
+        display: block;
+        width: 250px;
+    }
+    .item2 img {
+        width: 270px;
+        height: 400px;
+    }
+}
